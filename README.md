@@ -1,2 +1,2 @@
 # MAAL-E
-Agricultural bot
+Agricultural Bot
