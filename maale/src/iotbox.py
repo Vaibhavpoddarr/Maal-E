@@ -5,6 +5,8 @@ from maale.msg import iot
 
 
 def get_from_firebase():
+    #enter the recieiving code 
+    #if condition where threshold is met
     temp=78.5
     humidity=45
     light=30
@@ -28,7 +30,7 @@ def Iot(t,h,l):
 
 
 if __name__=="__main__":
-    
+    rospy.init_node('iot')
     t,h,l=get_from_firebase()
     Iot(t,h,l)
 
