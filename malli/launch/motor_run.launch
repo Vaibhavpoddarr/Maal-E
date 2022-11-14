@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="malli" type="motor.py" name="rusty_bot"  output="screen"></node>
+ 
+</launch>
