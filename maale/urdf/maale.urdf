@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<robot name="lawn_mower">
+    <link name="base_link"/>
+    <link name="lidar"/>
+    <link name="camera0"/>
+
+    <joint name="laser_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="lidar"/>
+        <origin rpy=" 1.571  0 1.571" xyz="0.0 0.0 0.16"/>
+    </joint>
+    <joint name="camera_joint" type="fixed">
+		<parent link="base_link"/>
+		<child link="camera0"/>
+		<origin rpy="-1.5707963 0 -1.5707963" xyz="0.0 0.0 0.34"/>
+    </joint>
+</robot>
